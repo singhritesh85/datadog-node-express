@@ -1,5 +1,5 @@
 const tracer = require('dd-trace').init({ service: 'node-express', // shows up as Service in Datadog UI
-                                        hostname: 'agent', // references the `agent` service in docker-compose.yml
+                                        hostname: 'agent', // references the `agent` service in docker-compose.yml for kubernetes make it as process.env.DD_AGENT_HOST
                                         debug: true }) // useful for seeing request/response and any logs
 
 const express = require('express')
