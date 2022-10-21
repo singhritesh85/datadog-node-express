@@ -1,6 +1,9 @@
 # datadog-node-express
 This repository demonstrates Datadog's monitoring prowess for a simple Node.JS application.  Here we create a simple Node.js application with the Datadog agent installed for APM monitoring.
 
+For Kubernetes change the second line as hostname: process.env.DD_AGENT_HOST, in the file #vim datadog-node-express/node/index.js
+
+
 ## Prerequisites
 1) You have a Datadog account.  If you do not have an account, sign up for a free 14-day trial here:
 https://www.datadoghq.com/
